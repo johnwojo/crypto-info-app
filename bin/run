@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby\
+require_relative "../lib/cli.rb"
+require_relative ('../lib/coin.rb')
+require_relative ('../lib/scraper.rb')
+
+
+CommandLineInteface.new.run
