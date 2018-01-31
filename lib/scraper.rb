@@ -13,8 +13,7 @@ class Scraper
 
 
   def list(range)
-    @page.css("text-center sorting")
-    puts "Here's info about your coin!"
+    @page.css(' a ')
   end
 
 

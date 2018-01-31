@@ -20,7 +20,7 @@ class CommandLineInteface
 
   def request
     input = gets.strip.to_i
-    if input > 0 && input < 100
+    if input > 0 && input < 101
       puts "Here are coins #{input} - #{input+9}."
     elsif input.downcase != "exit"
       puts "Invalid input. Try again. Enter 1,11,21,31,etc.."
