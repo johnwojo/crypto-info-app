@@ -18,7 +18,7 @@ class CommandLineInteface
     puts "Which list would you like to see? For 1-10, enter 1."
     sleep(1)
     puts "For 11-20, enter 11. For 21-30, enter 21. Etc."
-    sleep(12)
+    sleep(1)
     puts "Otherwise, just type 'Exit.'"
   end
 
@@ -75,6 +75,7 @@ class CommandLineInteface
     puts "Which coin do you want to know more about? 1-100."
     input = gets.strip
     puts "Oh! Coin number #{input}? Great choice."
+    scraper('http://www.coinmarketcap.com')
     # @@all.each do |coin|
   #    if coin.number == input
   #      puts coin.name

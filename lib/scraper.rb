@@ -5,10 +5,10 @@ require 'open-uri'
 
 class Scraper
 
-  def scrape_from_coinmarketcap(index_url)
+  def scrape(index_url)
     html = open(index_url)
     doc = Nokogiri::HTML(html)
-
+    puts doc.css('.text-center sorting_1')
   end
 
 end

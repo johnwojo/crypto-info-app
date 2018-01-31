@@ -16,4 +16,9 @@ class Coin
     @number = number
     @@all << self
   end
+
+  def all
+    @@all
+  end
+
 end
