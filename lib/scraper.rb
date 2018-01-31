@@ -13,7 +13,7 @@ class Scraper
 
 
   def list(range)
-    @page.css(' a ')
+    @page
   end
 
 
