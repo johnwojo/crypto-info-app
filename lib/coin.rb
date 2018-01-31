@@ -1,4 +1,5 @@
-require_relative ('./scraper.rb')
+require_relative "../lib/environment.rb"
+require 'nokogiri'
 
 
 

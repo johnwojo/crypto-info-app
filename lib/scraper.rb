@@ -1,14 +1,33 @@
-require_relative ('./coin.rb')
+require_relative ('./environment.rb')
 require 'nokogiri'
 require 'open-uri'
 
 
 class Scraper
+  attr_reader :page
 
-  def scrape(index_url)
-    html = open(index_url)
-    doc = Nokogiri::HTML(html)
-    puts doc.css('.text-center sorting_1')
+
+  def initialize
+    @page = Nokogiri::HTML(open("https://coinmarketcap.com/"))
   end
 
+
+  def list(range)
+    @page.css("text-center sorting")
+    puts "Here's info about your coin!"
+  end
+
+
+  def self.scrape_page(index_url)
+    html = open(index_url)
+    doc = Nokogiri::HTML(html)
+    coin_list = []
+    puts doc
+    #puts doc.css('.text-center sorting_1')
+  end
+
+
+  def self.name
+    @name
+  end
 end
